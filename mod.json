@@ -1,0 +1,33 @@
+{
+  "id": "accepted-state-fusion",
+  "name": "Accepted Token State Fusion",
+  "name_zh": "已接受 Token 状态写回融合",
+  "version": "0.1.0-experimental",
+  "status": "experimental",
+  "delivery": "read-only source overlay after frozen engine admission",
+  "activation_default": "disabled",
+  "qualification": "end-to-end integration screen did not pass",
+  "engine": "full-answer-b1-20261121-r10",
+  "engine_version": "2026.11.21.10",
+  "dependency": "BetterScale resident-state path in the admitted R10 SDK",
+  "scope": "Qwen3.5-35B-A3B BF16, Ascend 910B2 TP2, E36/R54, FULL, MTP2",
+  "live_marker": "R10_RESEARCH_ACCEPTED_STATE_PUBLICATION",
+  "startup_variant": "accepted_state_publication",
+  "files": {
+    "state_address": {
+      "path": "mods/betterscale/betterscale/models/qwen35/state_address.py",
+      "source_sha256": "fd8e334e31fa385e55049c3234b5c17ee3949782cff1709a880f2da8522f707a",
+      "overlay_sha256": "23b9866e6d9779fab6d74b87eb80d29c990f6743d93eae1ea23cc51ab30faccf"
+    },
+    "serving_warmup": {
+      "path": "mods/betterscale/betterscale/models/qwen35/serving_warmup.py",
+      "source_sha256": "970b4ce38227a5033ae42c3149aa63365346dcbea72c8ff09229eae04927eb97",
+      "overlay_sha256": "d65fd47e5f84178cf394860fd8d2d81f6910967db20e85f1ef73a76440611f1b"
+    },
+    "host_contract": {
+      "path": "mods/microflow/hust_prefill_microflow/school028/host-contract.json",
+      "source_sha256": "43166782fdbb43143f27473abba2465bb75b375f65775d1c0869b23aa1ac1914",
+      "overlay_sha256": "47cd40736338b6242eaa09dad327d58ad1b397d2a0b733461319562c8eaebecb"
+    }
+  }
+}
