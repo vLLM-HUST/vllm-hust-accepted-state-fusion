@@ -29,5 +29,10 @@
       "source_sha256": "43166782fdbb43143f27473abba2465bb75b375f65775d1c0869b23aa1ac1914",
       "overlay_sha256": "47cd40736338b6242eaa09dad327d58ad1b397d2a0b733461319562c8eaebecb"
     }
+  },
+  "maintainer": {
+    "name_zh": "张书豪",
+    "name_en": "Shuhao Zhang",
+    "github": "ShuhaoZhangTony"
   }
 }
